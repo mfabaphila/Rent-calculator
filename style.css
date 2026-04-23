@@ -39,12 +39,70 @@ h4{
 
     background-color: #2F4F7F;
     color: whitesmoke;
-   margin-left: 200px;
-   margin-right: 200px;
+   margin-left: 100px;
+   margin-right: 100px;
    padding: 15px;
 }
 
 .tenant input{
     display: flex;
     flex-direction: column;
+}
+
+.fill{
+    display: flex;
+    flex-direction: column;
+padding: 5px;
+margin-left: 100px;
+margin-right: 100px;
+color: #2F4F7F;
+font-size: 16px;
+font-weight: bold;
+}
+
+.fill input{
+margin-left: 10px;
+width: 250px;
+height: 20px;
+
+}
+
+.check{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.box{
+    display: flex;
+    padding: 10px;
+}
+
+.apartment{
+   display:flex;
+   flex-direction: column;
+   padding: 10px;
+   gap: 20px;
+   color: #2F4F7F;
+font-size: 16px;
+font-weight: bold;
+}
+
+.apartment select{
+    margin-left: 10px;
+width: 250px;
+height: 30px;
+display: flex;
+flex-direction: column;
+   
+}
+
+.money input{
+    margin-left: 10px;
+width: 250px;
+height: 25px;
+gap:10px;  
+display: flex;
+flex-direction: column;
 }
