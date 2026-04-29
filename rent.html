@@ -20,17 +20,16 @@
 <h3>Calculate How Much Rent You can Afford</h3>
 <h4>Tenant info and Apartment details</h4>
 
-
 <div class="box">  
 <div class="tenant">
     <div class="fill">
   <label>First Name</label>
-    <input type="text">
+    <input type="text" placeholder="Enter your name">
       </div>
 
       <div class="fill">
     <label>Last Name</label>
-<input type="tetx"> 
+<input type="tetx" placeholder="Enter your Surnam"> 
     </div>
 
     <div class="check">
@@ -41,8 +40,12 @@
 
   <div class="apartment">
 <label>
-Preferred Area
-   <select>
+    Preferred Area
+ <select>
+
+     <option>
+   Choose area 
+</option>
 
     <option>
     Northenrn Suburbs 
@@ -81,7 +84,9 @@ Preferred Area
 <label>
 Number of Bedrooms
    <select>
-
+  <option>
+   Choose Beds 
+</option>
     <option>
    1 Bed
 </option>
@@ -126,9 +131,25 @@ apartment 2+ beds
   </label>
 </div> 
 
- 
+  </div>
 </div>
+  <button>Calculate Affordability</button></button>
+  </div>
+    <h4>Results</h4>
 
-    
+    <div class="grid">
+        <div class="grid-item">Recommended Rent:</div>
+        <div class="grid-item" style="font-size: x-large;">R7 500.00</div>
+        <div class="grid-item">Affordablity ration:</div>
+        <div class="grid-item" style="color: red;">35% of income</div>
+       
+    </div>
+    </div>
+    <div class="white-line"></div>
+    <div class="grid"> 
+     <div class="grid-item">Summary:</div>
+    <div class="grid-item">You can comfortably afford up to R 7,500 in rent based on your income and expenses.</div>
+    </div>
+
     </body>
 </html>
