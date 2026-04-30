@@ -34,7 +34,7 @@
 
     <div class="check">
 <input type="checkbox"> 
-<label>I accept <a href="#"> terms and conditions</a></label>
+<label>I accept <a href="terms.html"> terms and conditions</a></label>
 </div>
 </div>
 
@@ -133,8 +133,9 @@ apartment 2+ beds
 
   </div>
 </div>
-  <button>Calculate Affordability</button></button>
-  </div>
+
+  <button id="calculateBtn">Calculate Affordability</button>
+
     <h4>Results</h4>
 
     <div class="grid">
@@ -151,5 +152,14 @@ apartment 2+ beds
     <div class="grid-item">You can comfortably afford up to R 7,500 in rent based on your income and expenses.</div>
     </div>
 
+
+    <script>
+const button= document.getElementById("calculateBtn");
+button.addEventListener("click", function(){
+    alert("calculating...");
+});
+
+
+    </script>
     </body>
 </html>
