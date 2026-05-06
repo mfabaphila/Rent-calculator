@@ -8,6 +8,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="script" href="script.js">
     </head>
     <body>
        
@@ -120,14 +121,14 @@ apartment 2+ beds
 <label>
     <div class="money"> 
     Monthly Net Income
-    <input type="text" placeholder="R0.00">
+    <input id="incomeInput" type="text" placeholder="R0.00">
 </label>
 </div>
 
   <div class="money"> 
   <label>
     Total Monthly Expenses
-    <input type="text" placeholder="R0.00">
+    <input id="expensesInput" type="text" placeholder="R0.00">
   </label>
 </div> 
 
@@ -139,8 +140,8 @@ apartment 2+ beds
     <h4>Results</h4>
 
     <div class="grid">
-        <div class="grid-item">Recommended Rent:</div>
-        <div class="grid-item" style="font-size: x-large;">R7 500.00</div>
+        <div  class="grid-item">Recommended Rent:</div>
+        <div id="rentResults" class="grid-item" style="font-size: x-large;">R0.00</div>
         <div class="grid-item">Affordablity ration:</div>
         <div class="grid-item" style="color: red;">35% of income</div>
        
@@ -152,14 +153,16 @@ apartment 2+ beds
     <div class="grid-item">You can comfortably afford up to R 7,500 in rent based on your income and expenses.</div>
     </div>
 
+    
+     
 
-    <script>
-const button= document.getElementById("calculateBtn");
-button.addEventListener("click", function(){
-    alert("calculating...");
-});
-
-
-    </script>
+ <script src="script.js"></script>
     </body>
 </html>
+
+<!-- TODD: 
+     1. Don't Calculate unless Ts and Cs are ticked 
+     2. add Affordability ratio
+     3. make summary active
+     4. fix net to gross
+     5. improve styling>
